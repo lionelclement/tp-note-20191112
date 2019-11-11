@@ -14,7 +14,7 @@ Le métier de cette application (package domain) est constitué des classes suiv
 
 Certaines de ces classes disposent d'une classe de test qui contient le ou les tests unitaire pour la classe.
 
-## La classe EntryTest (2 Tests)
+## La classe EntryTest (3 Tests)
 
 Cette classe contient deux tests unitaires pour la clase Question.
 
