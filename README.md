@@ -44,7 +44,7 @@ Pour exécuter les tests vous devez utiliser la commande gradle :
 
     gradle test
 
-Gradle construira le rapport de résultat montrant que les 4 tests ont tous échoué.
+Gradle construira le rapport de résultat montrant que les 5 tests ont tous échoué.
 
 Charge à vous de corriger le code pour que ces tests passent.
 
