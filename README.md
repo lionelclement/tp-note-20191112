@@ -1,21 +1,23 @@
 # TD Noté
 
-Pour réaliser ce TD noté vous devez corriger le code source qui vous est donné afin que les 5 tests passent.
+Pour réaliser ce TD noté vous devez corriger le code source qui vous est donné pour tenter de faire passer les 5 tests.
+Les sources du programmes (pas les \*.class) doivent ensuite être envoyées à **lionel.clement@labri.fr** sans délai **avant la fin de la séance de TD noté**.
 
 ## Contexte
 
 Le code donné (répertoire main) correspond à une application permettant de constuire des dictionnaires.
 Le métier de cette application (package domain) est constitué des classes suivantes :
 
+* Category.java : Cette classe représente les catégories grammaticales des mots (verbe, nom, adjectif, etc)
 * Entry.java : Cette classe représente une entrée de dictionnaire (forme écrite, prononciation, catégorie grammaticale, articles);
-* Article.java : Cette classe représente un article de dictionnaire (définition, usage, exemples, traductions);
-* DictionaryRespository.java : Cette interface représente le dépôt des entrées de dictionnaire. Elle est donc codée par une interface qui est réalisée par la couche infrastructure. Cette interface contient méthode de construction d'un dictionnaire à partir d'un fichier (réalisation non complète). 
+* Article.java : Cette classe représente un article de dictionnaire (définition, usage, exemples);
+* DictionaryRespository.java : Cette interface représente le dépôt des entrées de dictionnaire. Elle est donc codée par une interface qui est réalisée par la couche infrastructure. Cette interface contient une méthode de construction d'un dictionnaire à partir d'un fichier (réalisation non complète et non utilisée dans le TD). 
 
-Certaines de ces classes disposent d'une classe de test qui contient le ou les tests unitaires pour la classe.
+Certaines de ces classes disposent d'une classe de test qui contient un ou plusieurs tests unitaires.
 
 ## La classe EntryTest (3 Tests)
 
-Cette classe contient deux tests unitaires pour la clase Question.
+Cette classe contient trois tests unitaires pour la classe Entry
 
 Le test **categoriesShouldBeEqual** vérifie que Categorie est une value object.
 
@@ -27,7 +29,8 @@ Le test **formShouldNotNull** vérifie qu'une entrée ne peut pas avoir une form
 
 Cette classe contient un test unitaire pour la classe Article
 
-Le test **articleShouldBeEquals** vérifie l'unicité des définitions des articles (deux articles différents ne peuvent pas avoir la même définition)
+Le test **articleShouldBeEquals** vérifie l'unicité des définitions des articles (deux articles différents ne peuvent pas avoir les mêmes contenus)
+En commentaire et de façon optionnelle, vous pouvez ajouter le fait qu'une entrée de dictionnaire ne puisse pas avoir deux articles avec la même définition (test non réalisé).
 
 ## La classe DictionaryRepositoryTest (1 Test)
 
@@ -35,9 +38,9 @@ Cette classe contient un test unitaire pour la classe DictionaryRepositoryInMemo
 
 Le test **entryShouldBeFound** vérifie qu'une entrée entregistrée soit bien retrouvée.
 
-Tous ces tests échouent manifestement. 
 
 ## Consignes
+
 
 Pour exécuter les tests vous devez utiliser la commande gradle :
 
@@ -45,6 +48,8 @@ Pour exécuter les tests vous devez utiliser la commande gradle :
 
 Gradle construira le rapport de résultat montrant que les 5 tests ont tous échoué.
 
-Charge à vous de corriger le code pour que ces tests passent.
+Tous les tests échouent manifestement avec le code qui vous est fourni et qui semble incomplet. 
+
+Charge à vous de corriger et compléter le code pour que ces tests passent.
 
 Vous ne devez pas toucher au code des tests.
