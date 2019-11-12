@@ -30,13 +30,17 @@ Le test **formShouldNotNull** vérifie qu'une entrée ne peut pas avoir une form
 Cette classe contient un test unitaire pour la classe Article
 
 Le test **articleShouldBeEquals** vérifie l'unicité des définitions des articles (deux articles différents ne peuvent pas avoir les mêmes contenus)
-En commentaire et de façon optionnelle, vous pouvez ajouter le fait qu'une entrée de dictionnaire ne puisse pas avoir deux articles avec la même définition (test non réalisé).
 
 ## La classe DictionaryRepositoryTest (1 Test)
 
 Cette classe contient un test unitaire pour la classe DictionaryRepositoryInMemory
 
 Le test **entryShouldBeFound** vérifie qu'une entrée entregistrée soit bien retrouvée.
+
+
+## Bonus ##
+
+De façon optionnelle, vous pouvez ajouter le fait qu'une entrée de dictionnaire ne puisse pas avoir deux articles avec la même définition (test non réalisé). Si vous codez cette possibilité, dites-le en commentaire en tête de la classe **Entry** en plus de modifier le code. Il est inutile de coder le test qui vérifie cette fonctionalité.
 
 
 ## Consignes
