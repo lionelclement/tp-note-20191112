@@ -12,25 +12,22 @@ import java.util.Map;
 import fr.ubordeaux.ao.domain.exception.EntryException;
 import fr.ubordeaux.ao.domain.model.Article;
 import fr.ubordeaux.ao.domain.model.Category;
-import fr.ubordeaux.ao.domain.model.Dictionary;
 import fr.ubordeaux.ao.domain.model.DictionaryRepository;
 import fr.ubordeaux.ao.domain.model.Entry;
 
 public class DictionaryRepositoryInMemory implements DictionaryRepository {
 	
-	private Dictionary dictionary;
-	private Map<String, Entry> map;
+	private Map<String, Entry> dictionary;
+	private List<Entry> dictionaryList;
 
 	
 	public DictionaryRepositoryInMemory() {
-		List<Entry> entries = new ArrayList<Entry>();
-		map = new HashMap<String, Entry>();
-		this.dictionary = new Dictionary(entries); 
+		dictionary = new HashMap<String, Entry>();
 	}
 	
 	@Override
 	public void addEntry(Entry entry) {
-		dictionary.addEntry(entry);
+		dictionaryList.add(entry);
 	}
 
 	@Override
@@ -52,7 +49,7 @@ public class DictionaryRepositoryInMemory implements DictionaryRepository {
 	 }
 
 	public Entry getEntry(String key) {
-		return map.get(key);
+		return dictionary.get(key);
 	}
 
 }
