@@ -9,10 +9,9 @@ Le métier de cette application (package domain) est constitué des classes suiv
 
 * Entry.java : Cette classe représente une entrée de dictionnaire (forme écrite, prononciation, catégorie grammaticale, articles);
 * Article.java : Cette classe représente un article de dictionnaire (définition, usage, exemples, traductions);
-* Dictionary.java : Cette interface représente une collection d'entrées; 
-* DictionaryRespository.java : Cette interface représente le dépôt des entrées de dictionnaire. Elle est donc codé par une interface qui est réalisé par la couche infrastructure. Cette interface contient une factory: méthode de construction d'un disctionnaire à partir d'un fichier (réalisation non complète). 
+* DictionaryRespository.java : Cette interface représente le dépôt des entrées de dictionnaire. Elle est donc codée par une interface qui est réalisée par la couche infrastructure. Cette interface contient méthode de construction d'un dictionnaire à partir d'un fichier (réalisation non complète). 
 
-Certaines de ces classes disposent d'une classe de test qui contient le ou les tests unitaire pour la classe.
+Certaines de ces classes disposent d'une classe de test qui contient le ou les tests unitaires pour la classe.
 
 ## La classe EntryTest (3 Tests)
 
