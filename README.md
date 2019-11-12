@@ -1,7 +1,7 @@
 # TD Noté
 
 Pour réaliser ce TD noté vous devez corriger le code source qui vous est donné pour tenter de faire passer les 5 tests.
-Les sources du programmes (pas les \*.class) doivent ensuite être envoyées à **lionel.clement@labri.fr** sans délai **avant la fin de la séance de TD noté**.
+Les sources du programmes (pas les \*.class) doivent ensuite être envoyées à **lionel.clement@labri.fr** sans délai **avant la fin de la séance de TD noté** au format **\*.jar**.
 
 ## Contexte
 
