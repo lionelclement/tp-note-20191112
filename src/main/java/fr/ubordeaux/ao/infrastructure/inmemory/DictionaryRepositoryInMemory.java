@@ -43,8 +43,6 @@ public class DictionaryRepositoryInMemory implements DictionaryRepository {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
-		} catch (EntryException e) {
-			e.printStackTrace();
 		}
 	 }
 
